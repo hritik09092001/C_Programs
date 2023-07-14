@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+void PrintName(char name1[10][30]);
+char name[10][30];
+int i;
+clrscr();
+printf("Enter 10 students name");
+for(i=0;i<10;i++)
+{
+scanf("%s",&name[i]);
+}
+PrintName(name);
+getch();
+}
+void PrintName(char name1[10][30])
+{
+
+int i;
+printf("Entered Students names are");
+
+for(i=0;i<10;i++)
+{
+
+printf("%s\n",name1[i]);
+}
+}
