@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int x[10],i;
+int *p;
+p=&x[0];
+printf("Enter the 10 Number of the Array");
+for(i=0;i<10;i++)
+{
+scanf("%d",(p+i));
+}
+printf("The Value of the array=\n");
+for(i=0;i<10;i++)
+{
+printf("%d ",*(p+i));
+}
+getch();
+}
