@@ -1,0 +1,20 @@
+#include<conio.h>
+#include<stdio.h>
+void main()
+{
+FILE *fp,*fp1;
+char str1[20],str2[20];
+fp=fopen("String","w");
+printf("Enter the value");
+gets(str1);
+fputs(str1,fp);
+fclose(fp);
+fp=fopen("String","r");
+fp1=fopen("String1","w");
+fgets(str2,20,fp);
+fputs(str2,fp1);
+fclose(fp);
+fclose(fp1);
+getch();
+
+}
