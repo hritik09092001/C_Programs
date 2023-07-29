@@ -1,0 +1,41 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+void findGreat(int,int,int);
+int a,b,c;
+clrscr();
+printf("Enter the three numbers:\n");
+scanf("%d%d%d",&a,&b,&c);
+findGreat(a,b,c);
+getch();
+}
+void findGreat(int a,int b,int c)
+{
+int max;
+if(a>=b)
+{
+max=a;
+if(a>=c)
+{
+max=a;
+}
+else
+{
+max=c;
+}
+}
+else
+{
+max=b;
+if(b>=c)
+{
+max=b;
+}
+else
+{
+max=c;
+}
+}
+printf("The Greatest Function is=%d",max);
+}
