@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+void NatNumber(int);
+int n;
+clrscr();
+printf("Enter the value of n to print the number till n");
+scanf("%d",&n);
+NatNumber(n);
+getch();
+}
+void NatNumber(int n)
+{
+int i;
+for(i=1;i<=n;i++)
+{
+printf(" %d",i);
+}
+}
