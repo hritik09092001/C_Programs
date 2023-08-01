@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int ar[10],i;
+void SumOfElement(int[],int);
+printf("Enter the 10 Elements");
+for(i=0;i<10;i++)
+{
+scanf("%d",&ar[i]);
+}
+SumOfElement(ar,10);
+getch();
+}
+void SumOfElement(int a[],int b)
+{
+int i,sum=0;
+
+for(i=0;i<b;i++)
+{
+sum=sum+a[i];
+}
+printf("Sum of the elements=%d",sum);
+
+}
