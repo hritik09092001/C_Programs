@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+void printArray(int *,int);
+int x[10],i;
+int *p;
+clrscr();
+p=x;
+printf("Enter the 10 Elements of the Array\n");
+for(i=0;i<10;i++)
+{
+scanf("%d",(p+i));
+}
+printArray(x,10);
+getch();
+}
+void printArray(int *p,int n)
+{
+int i;
+for(i=0;i<n;i++)
+{
+printf("%d ",*(p+i));
+}
+}
