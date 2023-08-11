@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+#include<ctype.h>
+void main()
+{
+char str1[50];
+int i;
+puts("Enter a Paragraph");
+gets(str1);
+
+for(i=1;str1[i]!='\0';i++)
+{
+str1[i]=toupper(str1[i]);
+}
+printf("%s",str1);
+getch();
+}
