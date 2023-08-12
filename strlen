@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+void stringLength(char[]);
+char str1[10];
+printf("Enter the String");
+gets(str1);
+stringLength(str1);
+getch();
+
+}
+void stringLength(char str1[10])
+{
+
+int i,c=0;
+for(i=0;str1[i]!='\0';i++)
+{
+c++;
+}
+printf("The charcter of the string=\n");
+printf("%d",c);
+}
