@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    
+    char n[100];
+    printf("enter the string");
+    gets(n);
+    for(int i=0;n[i]!='\0';i++)
+    {
+       if(n[i] == ' '){
+       n[i] = 'e' ;}
+    }
+    puts(n);
+}
